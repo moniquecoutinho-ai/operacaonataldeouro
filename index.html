@@ -245,6 +245,7 @@ tr.hot td{background:rgba(143,42,49,.4)}
 .ns-t td:last-child{font-family:var(--f-display);font-size:21px;color:var(--gold);white-space:nowrap}
 @media (max-width:860px){ .pecas{grid-template-columns:1fr} .drow{grid-template-columns:48px minmax(0,1fr) 100px} }
 
+.swap.enc .x{text-decoration:none;color:var(--muted)}
 @media (max-width:980px){ .g4{grid-template-columns:repeat(2,minmax(0,1fr))} .steps.five{grid-template-columns:repeat(2,minmax(0,1fr))} }
 @media (max-width:860px){
   body{font-size:19px}
@@ -707,7 +708,7 @@ tr.hot td{background:rgba(143,42,49,.4)}
       <div class="g4">
         <div class="card"><span class="k">Período</span><h3>20 a 27/11</h3><p>De sexta a sexta.</p></div>
         <div class="card"><span class="k">Descontos</span><h3>De 10% a 50%</h3><p>O percentual é por produto. Confira na lista abaixo e use só o que está nela.</p></div>
-        <div class="card"><span class="k">Parcelamento</span><h3>6x sem juros</h3><p>Em compras a partir de R$ 400, de 20/11 a 31/12. Vale também para o Natal.</p></div>
+        <div class="card"><span class="k">Parcelamento</span><h3>Até 4x sem juros</h3><p>Parcela mínima de R$ 100: 2x a partir de R$ 200, 3x a partir de R$ 300 e 4x a partir de R$ 400.</p></div>
         <div class="card"><span class="k">Estoque</span><h3>Use o que já tem</h3><p>Os itens que a loja já tem também entram. Alguns podem não estar disponíveis no ciclo de pedidos.</p></div>
       </div>
       <div class="dist" role="img" aria-label="Quantidade de produtos por desconto: 50% 4 produtos, 40% 3, 30% 48, 25% 18, 20% 35, 10% 3">
@@ -720,7 +721,7 @@ tr.hot td{background:rgba(143,42,49,.4)}
         <div class="card"><span class="k">Para ele</span><p><b>Seleto:</b> Desodorante (50%) + Loção Hidratante e Sabonete em Barra (30%), Herbo ou Ocean. <b>Bonissimo (20%):</b> Balm Pós-Barba + Creme ou Gel para Barbear.</p></div>
         <div class="card"><span class="k">Para a casa</span><p><b>Esplendor:</b> Difusor de Essências (até 40%) + Essência para Difusor (30%). <b>Ritos (30%):</b> óleos essenciais e sais de banho para um presente de autocuidado.</p></div>
       </div>
-      <p class="note">Monte a ilha da Nossa Sexta só com o que sua loja tem em estoque. Todo atendimento de item da Black apresenta um lançamento junto e termina com "quem mais está na sua lista?". Em compras a partir de R$ 400, lembre do 6x sem juros: é a hora de completar a lista.</p>
+      <p class="note">Monte a ilha da Nossa Sexta só com o que sua loja tem em estoque. Todo atendimento de item da Black apresenta um lançamento junto e termina com "quem mais está na sua lista?". A partir de R$ 200 a cliente já parcela sem juros, com parcela mínima de R$ 100 e no máximo 4x. Use isso para completar a lista: "Com mais um presente, você divide em 3x."</p>
 
       <div class="ns-tools">
         <label class="ns-search" for="ns-q"><span>Buscar produto ou código</span><input id="ns-q" type="search" placeholder="Ex.: Sensore, difusor, 1081920260" autocomplete="off"></label>
@@ -945,9 +946,46 @@ tr.hot td{background:rgba(143,42,49,.4)}
         <div class="card"><span class="k">Clareza</span><h3>Simplificar a escolha</h3><p>Poucas opções, bem explicadas. Quem confunde perde a venda.</p></div>
         <div class="card"><span class="k">Relevância</span><h3>Sugerir o que faz sentido</h3><p>Para a ocasião, para o gosto de quem recebe e para o orçamento.</p></div>
       </div>
+    </div>
+
+        <div class="block" id="encantamento">
+      <span class="kicker">Encantar</span>
+      <h2>O que é e o que não é encantamento</h2>
+      <p class="intro">Encantar é fazer a cliente se sentir percebida e cuidada, do começo ao fim. Não é exagero, não é teatro e não é empurrar produto. É atenção de verdade, com conhecimento e capricho.</p>
+      <div class="swap enc">
+        <div><span class="h no">Não é encantamento</span></div><div class="hh"><span class="h yes">É encantamento</span></div>
+        <div><span class="x">Elogiar tudo com frase pronta: "Nossa, que linda!"</span></div><div><span class="ok">Elogio sincero e específico: "Esse perfume que você está usando é floral, né? Combina com você."</span></div>
+        <div><span class="x">Grudar na cliente e falar sem parar.</span></div><div><span class="ok">Ler o momento: dar espaço a quem quer olhar e chegar perto quando ela der sinal.</span></div>
+        <div><span class="x">Mostrar a loja inteira para parecer prestativa.</span></div><div><span class="ok">Três opções certas, explicadas de forma simples.</span></div>
+        <div><span class="x">Insistir no complemento depois do "não".</span></div><div><span class="ok">Oferecer uma vez, explicar por que combina e respeitar a resposta.</span></div>
+        <div><span class="x">Prometer prazo, estoque ou desconto sem confirmar.</span></div><div><span class="ok">"Vou confirmar para você" e voltar com a resposta certa.</span></div>
+        <div><span class="x">"Última unidade!" quando não é verdade.</span></div><div><span class="ok">Falar de escassez só quando for real, como nos itens da Nossa Sexta.</span></div>
+        <div><span class="x">Embrulho feito às pressas, sacola sem cuidado.</span></div><div><span class="ok">Laço caprichado, tag com o nome de quem vai receber, sacola perfumada.</span></div>
+        <div><span class="x">Atender bem e esquecer a cliente depois que ela sai.</span></div><div><span class="ok">Lembrar dela: pós-venda, aniversário no CRM, convite para voltar.</span></div>
+        <div><span class="x">Tratar a troca de janeiro como problema.</span></div><div><span class="ok">Receber a troca com o mesmo sorriso da venda e transformar em nova escolha.</span></div>
+      </div>
+      <div class="g3">
+        <div class="card"><span class="k">Pergunta 1</span><h3>Ela se sentiu percebida?</h3><p>Foi chamada pelo nome, ouvida e entendida, e não apenas atendida.</p></div>
+        <div class="card"><span class="k">Pergunta 2</span><h3>A escolha ficou mais fácil?</h3><p>Ela saiu segura do presente, sem dúvida e sem pressão.</p></div>
+        <div class="card"><span class="k">Pergunta 3</span><h3>Ela vai querer voltar?</h3><p>O final foi bonito e ela sabe que tem alguém na loja que cuida dela.</p></div>
+      </div>
+      <p class="note">Faça essas três perguntas a si mesma depois de cada atendimento. Se as três respostas forem sim, você encantou.</p>
+    </div>
+
+    <div class="block" id="musica">
+      <span class="kicker">Clima da loja</span>
+      <h2>Por que tocar música de Natal</h2>
+      <p class="intro">A música é a parte do clima que a cliente sente sem perceber. Ela ajuda a loja a dizer "aqui é Natal" antes de qualquer palavra da vendedora.</p>
       <div class="g2">
-        <div class="card"><span class="k" style="color:var(--wine2)">Não é encantamento</span><ul><li>Pressionar para comprar mais</li><li>Elogio artificial ou insistir quando ela quer espaço</li><li>Prometer o que a loja não cumpre</li><li>Oferecer complemento que não tem relação com a escolha</li></ul></div>
-        <div class="card"><span class="k">É encantamento</span><ul><li>Lembrar a ocasião e personalizar a sugestão</li><li>Facilitar a escolha em vez de confundir</li><li>Caprichar no embrulho e na entrega</li><li>Resolver um problema com respeito e agilidade</li></ul></div>
+        <div class="card"><span class="k">1 · Combina com o aroma</span><h3>Cheiro e som contando a mesma história</h3><p>Um estudo com clientes de loja mostrou que o aroma de Natal só melhorou a avaliação da loja quando tocava música de Natal junto. Com música comum, o mesmo aroma piorou a impressão. Vitrine, aroma, música e fala precisam combinar.</p></div>
+        <div class="card"><span class="k">2 · Faz a cliente ficar</span><h3>Música calma, cliente sem pressa</h3><p>Num estudo clássico em supermercado, com música lenta os clientes andaram mais devagar e as vendas foram cerca de 38% maiores do que com música rápida. Mais tempo na loja é mais tempo para sentir, escolher e completar a lista.</p></div>
+        <div class="card"><span class="k">3 · Desperta emoção</span><h3>Natal é memória</h3><p>Música de Natal lembra família, festa e as pessoas que a cliente quer presentear. É exatamente o sentimento que leva alguém a escolher um presente com carinho.</p></div>
+        <div class="card"><span class="k">4 · Mostra que a loja está pronta</span><h3>Quem passa na porta percebe</h3><p>Junto com a vitrine, a música mostra que a loja está preparada para o Natal e convida a entrar.</p></div>
+      </div>
+      <div class="g3">
+        <div class="card"><span class="k">O que tocar</span><ul><li>Natal instrumental ou cantado de forma suave</li><li>Andamento calmo</li><li>Nada de músicas agitadas ou com letra que distraia</li></ul></div>
+        <div class="card"><span class="k">Como tocar</span><ul><li>Volume baixo: se a vendedora precisa repetir a frase, está alto</li><li>Desde a abertura até o fechamento</li><li>Junto com o aroma de Natal na entrada</li></ul></div>
+        <div class="card"><span class="k">Cuidado com a equipe</span><ul><li>A mesma música o dia todo cansa quem trabalha</li><li>Tenha duas ou três playlists longas e alterne por turno</li><li>Confirme com o shopping que a licença do ECAD está em dia</li></ul></div>
       </div>
     </div>
 
